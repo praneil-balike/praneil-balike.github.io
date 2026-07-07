@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal website for Praneil Balike — Computer Science and Physics student at the University of Pennsylvania building data systems, market intelligence tools, and scientific computing pipelines."
+    />
+    <title>Praneil Balike</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+      <div class="ambient ambient-three"></div>
+
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Praneil Balike home">
+          <span class="brand-mark">PB</span>
+          <span>Praneil Balike</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#work">Work</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#interests">Interests</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <main id="top">
+        <section class="hero section-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">UPenn SEAS · BSE Computer Science · Physics</p>
+            <h1>Building clean systems where data, markets, and simulation meet.</h1>
+            <p class="hero-text">
+              I’m Praneil, a Penn Engineering student focused on software engineering,
+              applied data science, quantitative finance, and scientific computing. I like
+              projects that turn messy information into fast, useful, and explainable tools.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">View projects</a>
+              <a class="button secondary" href="#contact">Get in touch</a>
+            </div>
+          </div>
+
+          <aside class="hero-card reveal delay-1" aria-label="Profile snapshot">
+            <div class="orbital-card">
+              <div class="orbit orbit-one"></div>
+              <div class="orbit orbit-two"></div>
+              <div class="profile-core">
+                <span class="core-label">Current focus</span>
+                <strong>SWE · ML · Quant · Systems</strong>
+              </div>
+            </div>
+            <div class="signal-strip">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="quick-stats">
+              <li>
+                <span>School</span>
+                <strong>University of Pennsylvania</strong>
+              </li>
+              <li>
+                <span>Graduation</span>
+                <strong>Expected 2029</strong>
+              </li>
+              <li>
+                <span>GPA</span>
+                <strong>4.0 / 4.0</strong>
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="section about reveal" aria-labelledby="about-title">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">A builder with a math-first engineering style.</h2>
+          </div>
+          <div class="about-grid">
+            <article class="glass-card">
+              <h3>Software systems</h3>
+              <p>
+                I enjoy designing full-stack systems with clean service boundaries, REST APIs,
+                efficient database design, caching layers, predictable logging, and practical
+                frontend interfaces.
+              </p>
+            </article>
+            <article class="glass-card">
+              <h3>Data + finance</h3>
+              <p>
+                I’m interested in market intelligence, quantitative research, backtesting,
+                feature engineering, and dashboards that make complex financial data easier to
+                reason about.
+              </p>
+            </article>
+            <article class="glass-card">
+              <h3>Scientific computing</h3>
+              <p>
+                My research-side work focuses on computational metamaterials, mechanical
+                characterization, and simulation pipelines that connect raw outputs to physical
+                conclusions.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section timeline-section" id="work" aria-labelledby="work-title">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Experience</p>
+            <h2 id="work-title">Work and leadership</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="meta">Summer 2026 · Data Science / Applied Math</span>
+                <h3>United States Cold Storage</h3>
+                <p>
+                  Building logistics and optimization tools for routing, cost analysis, route
+                  geometry metrics, and model-driven operational decisions across shipment data.
+                </p>
+                <div class="tags">
+                  <span>Python</span><span>Pandas</span><span>Optimization</span><span>Routing</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="meta">Research · Scientific Computing</span>
+                <h3>Computational Metamaterials Research Tools</h3>
+                <p>
+                  Developing analysis scripts for force-extension behavior, system-level strain,
+                  tangent stiffness, reaction forces, and mechanical properties in blocky lattice
+                  simulations.
+                </p>
+                <div class="tags">
+                  <span>NumPy</span><span>JAX</span><span>Physics</span><span>Simulation</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="meta">Education Board</span>
+                <h3>Wharton Undergraduate Data Analytics Club</h3>
+                <p>
+                  Supporting data analytics education through Python, regression, visualization,
+                  and practical technical workshops for students building analytical foundations.
+                </p>
+                <div class="tags">
+                  <span>Teaching</span><span>Data Analytics</span><span>Python</span><span>Visualization</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="meta">Campus + career interests</span>
+                <h3>Finance, technology, and CS communities</h3>
+                <p>
+                  Active around WITG, Wharton Undergraduate Finance Club, and Penn CS spaces,
+                  with a focus on software engineering, quant preparation, and technical depth.
+                </p>
+                <div class="tags">
+                  <span>WITG</span><span>WUFC</span><span>CS</span><span>Quant Prep</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section projects" id="projects" aria-labelledby="projects-title">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projects</p>
+            <h2 id="projects-title">Selected builds</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card featured reveal">
+              <div class="project-topline">
+                <span>01</span>
+                <div class="project-status">Full-stack · ML · Finance</div>
+              </div>
+              <h3>Market Intelligence & Analysis Platform</h3>
+              <p>
+                A full-stack market-data platform designed to display cached financial data,
+                engineered features, model predictions, timestamps, and clean analytics workflows
+                through a structured backend and frontend.
+              </p>
+              <ul>
+                <li>React frontend with organized dashboard surfaces and reusable views.</li>
+                <li>Node.js / Express API layer with PostgreSQL-backed data access.</li>
+                <li>Python feature engineering and scikit-learn prediction workflows.</li>
+              </ul>
+              <div class="tags">
+                <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Python</span><span>scikit-learn</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal delay-1">
+              <div class="project-topline">
+                <span>02</span>
+                <div class="project-status">Logistics · Maps</div>
+              </div>
+              <h3>Route Intelligence Prototype</h3>
+              <p>
+                Local tooling for shipment route analysis, route-map generation, geometric
+                weirdness metrics, cache-backed data loading, and probability-style operational
+                scoring.
+              </p>
+              <div class="tags">
+                <span>Flask</span><span>Folium</span><span>Parquet</span><span>GeoPy</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal delay-2">
+              <div class="project-topline">
+                <span>03</span>
+                <div class="project-status">Research · Simulation</div>
+              </div>
+              <h3>Metamaterials Mechanics Toolkit</h3>
+              <p>
+                Scripts for extracting physical metrics from simulations, including force curves,
+                reaction forces, tangent stiffness, system strain, and lattice-level mechanical
+                characterization.
+              </p>
+              <div class="tags">
+                <span>NumPy</span><span>Matplotlib</span><span>JAX-MD</span><span>Physics</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal delay-3">
+              <div class="project-topline">
+                <span>04</span>
+                <div class="project-status">Quant · Preparation</div>
+              </div>
+              <h3>Quant Competition + Interview Prep</h3>
+              <p>
+                Focused preparation across probability, market making, allocation games, DSA,
+                and LeetCode-style problem solving for SWE, quant dev, and trading roles.
+              </p>
+              <div class="tags">
+                <span>Algorithms</span><span>Probability</span><span>Trading</span><span>DSA</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section skills" id="skills" aria-labelledby="skills-title">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Toolkit</p>
+            <h2 id="skills-title">Skills I keep sharpening</h2>
+          </div>
+
+          <div class="skill-board reveal">
+            <div class="skill-column">
+              <h3>Languages</h3>
+              <div class="skill-pills">
+                <span>Python</span><span>Java</span><span>OCaml</span><span>SQL</span><span>JavaScript</span>
+              </div>
+            </div>
+            <div class="skill-column">
+              <h3>Systems</h3>
+              <div class="skill-pills">
+                <span>React</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>REST APIs</span>
+              </div>
+            </div>
+            <div class="skill-column">
+              <h3>Data / ML</h3>
+              <div class="skill-pills">
+                <span>Pandas</span><span>NumPy</span><span>scikit-learn</span><span>Matplotlib</span><span>Feature Engineering</span>
+              </div>
+            </div>
+            <div class="skill-column">
+              <h3>Foundations</h3>
+              <div class="skill-pills">
+                <span>DSA</span><span>Discrete Math</span><span>Linear Algebra</span><span>Optimization</span><span>Physics</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section interests" id="interests" aria-labelledby="interests-title">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Lower down: things I like</p>
+            <h2 id="interests-title">Not everything has to be a resume bullet.</h2>
+          </div>
+
+          <div class="interest-grid">
+            <article class="interest-card music reveal">
+              <div class="icon-wrap music-bars" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <h3>Music</h3>
+              <p>
+                I like songs with energy, clean moments, and strong melodic payoff — the same
+                reason I like interfaces that feel alive without being loud.
+              </p>
+            </article>
+
+            <article class="interest-card finance reveal delay-1">
+              <div class="icon-wrap mini-chart" aria-hidden="true">
+                <svg viewBox="0 0 120 60" role="img">
+                  <polyline points="5,45 25,40 40,48 55,25 72,30 88,14 110,20" />
+                </svg>
+              </div>
+              <h3>Finance</h3>
+              <p>
+                I’m drawn to market structure, prediction under uncertainty, and the kind of
+                thinking where math, incentives, and engineering all collide.
+              </p>
+            </article>
+
+            <article class="interest-card volleyball reveal delay-2">
+              <div class="icon-wrap volleyball-orbit" aria-hidden="true">
+                <span></span>
+              </div>
+              <h3>Volleyball</h3>
+              <p>
+                Volleyball hits the same part of my brain as good engineering: timing, spacing,
+                fast feedback, and repeatedly turning messy situations into controlled decisions.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact reveal" id="contact" aria-labelledby="contact-title">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let’s build something precise and useful.</h2>
+            <p>
+              I’m interested in software engineering, ML/data science, quant dev, quantitative
+              trading, and research-adjacent technical work.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:your.email@example.com">Email me</a>
+            <a class="button secondary" href="https://github.com/your-github-username" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/your-linkedin-slug" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
