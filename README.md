@@ -17,12 +17,11 @@ praneil-personal-site/
 └── README.md
 ```
 
-## Before you deploy
+## Contact
 
-Open `index.html` and replace these placeholders near the contact section:
-
-- `your.email@example.com`
-- `https://www.linkedin.com/in/your-linkedin-slug`
+- Email: `pbalike@sas.upenn.edu`
+- LinkedIn: https://www.linkedin.com/in/praneilbalk
+- GitHub: https://github.com/praneil-balike
 
 Optional edits:
 
