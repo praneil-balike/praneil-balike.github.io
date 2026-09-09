@@ -1,6 +1,6 @@
 # Praneil Balike — Personal Website
 
-A clean, animated, static personal website built for GitHub Pages. No build step, no framework, and no external runtime dependencies.
+A typography-led, static personal website built for GitHub Pages. No build step, no framework, and no external runtime dependencies.
 
 ## Structure
 
@@ -22,13 +22,12 @@ praneil-personal-site/
 Open `index.html` and replace these placeholders near the contact section:
 
 - `your.email@example.com`
-- `https://github.com/your-github-username`
 - `https://www.linkedin.com/in/your-linkedin-slug`
 
 Optional edits:
 
 - Add your real resume PDF to `assets/` and add a button linking to it.
-- Add real GitHub repository links to the project cards once the repos are public.
+- Add real GitHub repository links to the project entries once the repos are public.
 - Change the GPA or graduation year if your official resume line changes.
 
 ## Run locally
@@ -84,8 +83,8 @@ Settings → Pages → Build and deployment → Deploy from a branch → main �
 
 ## Design notes
 
-- Static HTML/CSS/JS for easy GitHub Pages deployment.
-- IntersectionObserver reveal animations.
-- CSS-only ambient gradients, orbit animation, music bars, finance chart, and volleyball icon.
-- Responsive mobile navigation.
-- `prefers-reduced-motion` support for accessibility.
+- Static HTML/CSS/JS for GitHub Pages, with no build step or font downloads.
+- System serif headings, a neutral gray background, and a single rust accent.
+- Plain project entries and ruled sections in place of glass cards and decorative animation.
+- Responsive mobile navigation with Escape handling and keyboard focus management.
+- Content and navigation remain available when JavaScript is disabled.

@@ -1,43 +1,42 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
-const navItems = document.querySelectorAll(".nav-links a");
-const revealEls = document.querySelectorAll(".reveal");
+const mobileViewport = window.matchMedia("(max-width: 700px)");
 
 function setNavState(isOpen) {
-  document.body.classList.toggle("nav-open", isOpen);
   navLinks.classList.toggle("open", isOpen);
   navToggle.setAttribute("aria-expanded", String(isOpen));
-  navToggle.setAttribute(isOpen ? "aria-label" : "aria-label", isOpen ? "Close navigation" : "Open navigation");
+  navToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+  navToggle.textContent = isOpen ? "Close" : "Menu";
 }
 
-navToggle.addEventListener("click", () => {
-  const isOpen = !navLinks.classList.contains("open");
-  setNavState(isOpen);
-});
-
-navItems.forEach((item) => {
-  item.addEventListener("click", () => setNavState(false));
-});
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
+if (navToggle && navLinks) {
+  document.body.classList.add("nav-ready");
+  navToggle.addEventListener("click", () => {
+    setNavState(navToggle.getAttribute("aria-expanded") !== "true");
+  });
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      setNavState(false);
+      if (mobileViewport.matches) {
+        const target = document.querySelector(link.getAttribute("href"));
+        if (target) {
+          target.setAttribute("tabindex", "-1");
+          target.focus({ preventScroll: true });
+          target.addEventListener("blur", () => target.removeAttribute("tabindex"), { once: true });
+        }
       }
     });
-  },
-  {
-    threshold: 0.16,
-    rootMargin: "0px 0px -60px 0px",
-  }
-);
-
-revealEls.forEach((el) => observer.observe(el));
-
-window.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && navLinks.classList.contains("open")) {
+      setNavState(false);
+      navToggle.focus();
+    }
+  });
+  mobileViewport.addEventListener("change", () => {
+    if (mobileViewport.matches && navLinks.contains(document.activeElement)) {
+      navToggle.focus();
+    }
     setNavState(false);
-  }
-});
+  });
+}
